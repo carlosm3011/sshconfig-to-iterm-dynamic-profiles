@@ -21,6 +21,12 @@ from pathlib import Path
 from typing import List, Dict, Optional, Set
 
 
+# Version information
+VERSION = "1.0.0"
+RELEASE_DATE = "2026-01-01"
+PROGRAM_NAME = "SSH Config to iTerm2 Dynamic Profiles Converter"
+
+
 # --- SSH Config Parsing Functions ---
 
 def expand_path(path: str) -> str:
@@ -336,6 +342,12 @@ Examples:
   %(prog)s --multi-file --output-dir ~/profiles
   %(prog)s --parent-profile "My Theme" --yes
         """
+    )
+
+    parser.add_argument(
+        '--version',
+        action='version',
+        version=f'{PROGRAM_NAME}\nVersion: {VERSION}\nRelease Date: {RELEASE_DATE}'
     )
 
     parser.add_argument(
