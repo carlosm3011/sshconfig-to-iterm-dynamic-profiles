@@ -144,4 +144,4 @@ This will generate iTerm2 profiles named "production-server" and "staging", plus
 
 ## License
 
-MIT License - see LICENSE file for details
+BSD 3-Clause - see LICENSE file for details
