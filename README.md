@@ -142,6 +142,12 @@ This will generate iTerm2 profiles named "production-server" and "staging", plus
 - Use absolute paths or paths relative to the config file location
 - Check file permissions on included files
 
+## Support
+
+If you find this tool useful, consider buying me a coffee!
+
+[![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/carlos_cagnazzo)
+
 ## License
 
 BSD 3-Clause - see LICENSE file for details

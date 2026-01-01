@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **Version information display**: Added `--version` switch to display program name, version number, and release date. Version information is stored as constants (`VERSION`, `RELEASE_DATE`, `PROGRAM_NAME`) at the top of the script for easy maintenance.
+
 ### Fixed
 - **Include directive with quoted paths not being resolved**: Fixed bug where Include directives with quoted paths (e.g., `Include "/path/to/file"`) were not being processed correctly. The quotes were being treated as part of the filename, causing the file resolution to fail. The `resolve_includes()` function now strips surrounding single or double quotes from Include paths before processing them. This fix enables proper parsing of SSH configs that use quoted Include paths, which is common in OpenSSH configurations.
   - Impact: Users with quoted Include paths would have missing Host entries from included files
